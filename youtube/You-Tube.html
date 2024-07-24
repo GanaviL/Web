@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel ="icon" type="png/icon" href=youtube.png >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .Set {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .Menu{
+            display: flex;
+            align-items: center;  
+        }
+
+        .logo{
+            position: relative;
+            height: 50px;
+            width: 50px;
+            margin-left: 20px;
+        }
+        .main-Set {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .video-Set {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: white;
+        }
+        .videos {
+            flex: 1;
+            background-color:white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .videos .video {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .videos .video-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .videos .video-info h4 {
+            margin: 10px;
+            font-size: 14px;
+        }
+        .videos .video-info p {
+            margin: 1px;
+            font-size: 12px;
+            color: #080707;
+        }
+        .navbar .section {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .section img {
+            width: 90px;
+            margin-right: 20px;
+        }
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            size: 150;
+            outline: none;
+        }
+        .navbar .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 25px 0 0 25px;
+            outline: none;
+            background-color: #f3f0f0;
+            color: #f8f6f6;
+        }
+        .navbar .search-bar button {
+            padding: 10px;
+            border: none;  
+            border-radius: 0 25px 25px 0;
+            background-color:white;
+        }
+        .navbar .icons {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .icons img {
+            width: 24px;
+            height: 24px;
+            margin-left: 20px;
+            cursor: pointer;
+            border-radius: 25PX;
+
+        }
+         .channel{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color:white;
+            border-radius: 10px;
+        }
+        .channel.section {
+            display: flex;
+            align-items: center;
+        }
+        .channel .subscribe-btn {
+            background-color:black;
+            color:white;
+            border: none;
+            border-radius: 2px;
+            padding: 10px 16px;
+            border-radius: 25px  25px 25px 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .channel .action {
+            display: flex;
+            align-items: center;
+        }
+        .channel .action img {
+            width: 24px;
+            height: 24px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+      
+      
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="Menu" display= "flex"; align-items="center"; >
+            <i class="fa-solid fa-bars"></i>
+            </div>
+        <div class="section">
+            <img class="logo"  src="YouTube-Logo.png"  width="100%" height="100%" position="absolute" object-fit="cover">
+            <div class="search-bar">
+                <input id="search" placeholder="Search" size="150" style="outline: none;">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="icons">
+            <button class="micro" margin-left="20px"><i class="fa-solid fa-microphone"></i> </button>
+        </div>
+    </div>
+    <div class="Set">
+        <div class="main-Set">
+            <div class="video-Set">
+                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/uQ0LGwPBC2c?si=jpvCbgh79kpIksO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="channel">
+                <div class="section">
+                    <div style="display: flex; flex-direction: column;">
+                        <div>Tom & Jerry in italiano | Un po' di aria fresca! | WB Kids</div>
+                    </div>
+                </div>
+                <button class="subscribe-btn">Subscribe</button><br><br>
+                <div class="action">
+                    <img src="like.png" alt="Like Icon">
+                    <span style="margin-left: 5px;margin-right: 15px;">302K</span>
+                    <img src="dont-like.png" alt="Dislike Icon">
+                    <img src="share.png" alt="Share Icon">
+                    <img src="more.png" alt="More Icon">
+                </div>
+            </div>
+            
+        </div>
+         <div class="videos">
+             <div class="video" >
+                <iframe width="200" height="150" src="https://www.youtube.com/embed/Wvz-6ic7MYU?si=0KHuPr6d1WbCTkze" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                  <b>  <p>Tom & Jerry in italiano | U-u-u-uccellino! | WB Kids</p></b>
+                </div>
+            </div>
+            <div class="video">
+                <iframe width="200" height="150" src="https://www.youtube.com/embed/CPwdL44yLMg?si=rScWCnqessfTpPh5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                 <b>   <p>Tom & Jerry em Português | O Melhor do Patinho | Compilação de Animações Clássicas | WB Kids</p></b>
+                </div>
+            </div>
+            <div class="video">
+                <iframe width="200" height="150" src="https://www.youtube.com/embed/n8g1hFXCKB4?si=uK73AG85O1_nMtbU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                   <b> <p>Tom and Jerry - Trap happy john mouse</p></b>
+                </div>
+            </div>
+            <div class="video">
+                <iframe width="200" height="150" src="https://www.youtube.com/embed/mK9J8ByjT4U?si=Ob090gPrV97-sgf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                   <b> <p>Tom và Jerry - Ghế xít đu cũ Tom (Old Rockin' Chair Tom, Viet sub)</p></b>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
